@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Annual Math Contest</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff4e6;
+            color: #4a2c2a;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffaf75, #ff7f32);
+            color: #ffffff;
+            padding: 40px 10%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a2c2a;
+            font-weight: 600;
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 127, 50, 0.3);
+        }
+
+        .contact-container {
+            background: #ffe5d0;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container h2 {
+            font-size: 1.8rem;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            color: #4a2c2a;
+            text-align: center;
+        }
+
+        .contact-container input,
+        .contact-container textarea,
+        .contact-container button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 2px solid #ffaf75;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            outline: none;
+        }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus {
+            border-color: #ff7f32;
+        }
+
+        .contact-container textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-container button {
+            background-color: #ff7f32;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .contact-container button:hover {
+            background-color: #cc6a1d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #ffaf75;
+            color: #4a2c2a;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #4a2c2a;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="contact-container">
+    <h2>Get in Touch</h2>
+
+    <form id="contact-form" action="send_email.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="mail" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" name="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <p>&copy; 2025 Annual Math Contest | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
