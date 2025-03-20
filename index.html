@@ -1,1 +1,274 @@
+<!-- © 2025 Saskatchewan Mathematics Contest. All Rights Reserved.  
+Unauthorized duplication, reproduction, or distribution of any content on this website is strictly prohibited.  
+All materials, including but not limited to images and logos, are the property of Saskatchewan Mathematics Contest and its team.  
+Any violation may result in legal action. -->  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Math Contest</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff4e6;
+            color: #4a2c2a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffaf75, #ff7f32);
+            color: #ffffff;
+            padding: 50px 10%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ff7f32;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a, nav .dropdown {
+            text-decoration: none;
+            color: #4a2c2a;
+            font-weight: 600;
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        nav a:hover, nav .dropdown:hover {
+            background-color: rgba(255, 127, 50, 0.3);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffaf75;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            min-width: 180px;
+            padding: 10px 0;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 20px;
+            color: #4a2c2a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ff7f32;
+            color: #ffffff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffe5d0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contest-section {
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contest-section img {
+            width: 160px;
+            height: 160px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .contest-section img:hover {
+            transform: scale(1.05);
+        }
+
+        .contest-section h3 {
+            font-size: 1.5rem;
+            color: #4a2c2a;
+        }
+
+        .contest-section p {
+            color: #5c3b3b;
+            font-size: 1rem;
+        }
+
+        .fun-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            color: #fff;
+            background: #ff7f32;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            position: relative;
+        }
+
+        .fun-btn:hover {
+            background: #cc6a1d;
+        }
+
+        .math-symbol {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 1;
+            animation: floatUp 1.5s forwards;
+            pointer-events: none;
+            color: #ff7f32
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-60px);
+                opacity: 0;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #ffaf75;
+            color: #4a2c2a;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #4a2c2a;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Annual Math Contest</h1>
+    <p>Challenge your mind. Compete with the best. Celebrate math!</p>
+</header>
+
+<nav>
+    <a href="#basic">Basic Contest</a>
+    <div class="dropdown">
+        Other Contests
+        <div class="dropdown-content">
+            <a href="https://cms.math.ca/competitions/other-mathematical-competitions/">Canadian Contest</a>
+            <a href="https://www.imo-official.org/">International Mathematical Olympiad</a>
+            <a href="https://example.com">Our Past Contests</a>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <h2>Welcome to the Annual Math Contest!</h2>
+    <p>
+        Whether you're just starting out, striving for proficiency, or mastering advanced concepts,
+        our contests are designed to inspire, challenge, and celebrate mathematical talent.
+    </p>
+
+    <div class="contest-section" id="basic">
+        <img src="https://via.placeholder.com/160" alt="Basic Contest">
+        <div class="content">
+            <h3>Basic Contest</h3>
+            <p>
+                Perfect for beginners, the Basic Contest introduces fun and engaging problems that help
+                develop your math skills in an encouraging environment.
+            </p>
+        </div>
+    </div>
+
+    <button class="fun-btn" onclick="showMathSymbol(event, this)">Click Me</button>
+
+</section>
+
+<footer>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <p>&copy; 2025 Annual Math Contest | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMathSymbol(event, button) {
+        const symbols = ['+', '-', '×', '÷', 'π', '√', '=', '≠', '<', '>', '≤', '≥', '∞', '∑', '∏', '√', '∫', '∂', '∈', '∉', '∩', '∪', '∅'];
+        const symbol = symbols[Math.floor(Math.random() * symbols.length)];
+        const element = document.createElement('div');
+        element.textContent = symbol;
+        element.className = 'math-symbol';
+        button.appendChild(element); // Attach to the button
+
+        // Get button position and size
+        const rect = button.getBoundingClientRect();
+        const offsetX = Math.random() * rect.width;
+        const offsetY = Math.random() * rect.height;
+
+        // Position the symbol relative to the button
+        element.style.left = `${offsetX}px`;
+        element.style.top = `${offsetY}px`;
+
+        setTimeout(() => element.remove(), 1500);
+    }
+</script>
+</body>
+</html>
 
